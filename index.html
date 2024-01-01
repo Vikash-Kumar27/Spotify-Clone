@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="utillity.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Spotify – Web Player</title>
+</head>
+
+<body>
+    <div class="container flex bg-black ">
+        <div class="left   ">
+            <div class="home bg-grey rounded p-1 m-1 ">
+                <div class="cross">
+                    <img class="invert" src="img/cross.svg" alt="">
+                </div>
+                <div class="logo"><img class="invert" src="img/logo.svg" alt="logo"></div>
+                <ul>
+                    <li><img class="invert " src="img/home.svg" alt="home">Home</li>
+                    <li><img class="invert" src="img/search.svg" alt="home">Search</li>
+                </ul>
+            </div>
+            <div class="library  bg-grey rounded p-1 m-1">
+                <div class="flex">
+                    <div class="heading  ">
+                        <img class="invert  z" src="img/library.svg" alt="library">
+                        <h4>Your Library</h4>
+                    </div>
+                    <div class="plus ">
+                        <img class="invert" src="img/plus.svg" alt="">
+                    </div>
+                </div>
+                <div class="songlist ">
+                    <ul></ul>
+                </div>
+
+
+                <div class="footer">
+                    <div><a href="/"><span>Legal</span></a></div>
+                    <div><a href="/"><span>Privacy Center</span></a></div>
+                    <div><a href="/"><span>Privacy Policy</span></a></div>
+                    <div><a href="/"><span>Cookies</span></a></div>
+                    <div><a href="/"><span>About Ads</span></a></div>
+                    <div><a href="/"><span>Accessibility</span></a></div>
+                    <div><a href="/"><span>Cookies</span></a></div>
+                </div>
+                <div>
+                    <button class="btn rounded-2"> English</button>
+                </div>
+            </div>
+        </div>
+        <div class="right  m-1 ">
+            <div class="main-viewContainer bg-grey">
+                <div class="nav  flex item-center rounded ">
+                    <div class="arrow ">
+                        <img class="hamburger invert" src="img/hamburger.svg" alt="">
+                        <img class="invert" src="img/leftarrow.svg" alt="">
+                        <img class="invert" src="img/rightarrow.svg" alt="">
+                    </div>
+                    <div class="buttons flex item-center justify-center">
+                        <button class="signbtn ">Sign up</button>
+                        <button class="logbtn  ">Log in</button>
+                    </div>
+                </div>
+
+                <div class="spotify-Playlist rounded ">
+                    <h2>Spotify Playlists</h2>
+                    <div class="container-cards   ">
+
+                    </div>
+                </div>
+            </div>
+            <div class="playbar rounded bg-grey flex  item-center">
+                <div class="seekbar">
+                    <div class="circle"></div>
+                </div>
+                <div class="Abovebar ">
+                    <div class="songInfo"></div>
+                    <div class="playbuttons ">
+                        <img id="previous" src="img/previous.svg" alt="">
+                        <img id="play" src="img/play.svg" alt="">
+                        <img id="next" src="img/next.svg" alt="">
+                    </div>
+                    <div class="volume-Time">
+                        <div class="songTiming "></div>
+                        <div class="volume">
+                            <img class="invert" src="img/volume.svg" alt="">
+                            <div class="range">
+                                <input type="range">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
